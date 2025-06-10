@@ -21,7 +21,7 @@ jobs:
         run: pip install pyinstaller "python-socketio[client]" pyuac
 
       - name: Build executable
-        run: pyinstaller --onefile --noconsole --icon NONE Windows.py
+        run: pyinstaller --onefile --noconsole --icon NONE Install.py
 
       - name: Create Release
         id: create_release
